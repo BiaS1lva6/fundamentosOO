@@ -99,19 +99,41 @@ internal class Program
         //    ////imprimindo informação na tela
         //    //Console.WriteLine("O Animal " + animal1.Especie + " emitiu um som");
 
-        Gato gato = new Gato();
-        gato.Nome = "Clara";
-        Console.WriteLine(gato.Nome + " faz: ");
-        gato.emitirSom();
+        //Gato gato = new Gato();
+        //gato.Nome = "Clara";
+        //Console.WriteLine(gato.Nome + " faz: ");
+        //gato.emitirSom();
 
-        Galinha cocow = new Galinha();
-        cocow.Nome = "Claudete";
-        Console.WriteLine(cocow.Nome + " faz: ");
-        cocow.emitirSom();
+        //Galinha cocow = new Galinha();
+        //cocow.Nome = "Claudete";
+        //Console.WriteLine(cocow.Nome + " faz: ");
+        //cocow.emitirSom();
 
-        Porco porc = new Porco();
-        porc.Nome = "Britney";
-        Console.WriteLine(porc.Nome + " :faz ");
-        porc.emitirSom();
+        //Porco porc = new Porco();
+        //porc.Nome = "Britney";
+        //Console.WriteLine(porc.Nome + " :faz ");
+        //porc.emitirSom();
+
+        Mago merlin = new Mago();
+        merlin.Nome = "Mago Carlos";
+        merlin.Vida = 140;
+        merlin.Inteligencia = 77;
+        merlin.Agilidade = 60;
+        merlin.Forca = 62;
+        merlin.Nivel = 1;
+
+        Elfo elfo = new Elfo();
+        elfo.Nome = "Claudio";
+        elfo.Vida = 100;
+        elfo.Inteligencia = 83;
+        elfo.Forca = 56;
+        elfo.Agilidade = 90;
+        elfo.Nivel = 1;
+
+
+        merlin.apresentarSe();
+        elfo.apresentarSe();
+
+        merlin.batalha(elfo);
     }
 }
