@@ -1,19 +1,17 @@
-﻿using System;
+﻿using fundamentosOO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace fundamentosOO
+namespace defundamentos
 {
-    public class Cavalheiro : Personagem
+    public class Cavaleiro : Personagem
     {
-        public override void apresentarSe()
+        public override void Apresentarse()
         {
-            Console.WriteLine("Olá eu sou o cavalheiro " + this.Nome + " tenho " + this.Vida + " pontos de vida, \nInteligência: " + this.Inteligencia + ", \nAgilidade: " + this.Agilidade + "\nForça: " + this.Forca + ". \nNivel atual é: " + this.Nivel);
-            Console.WriteLine("=====================================================");
-
-
+            Console.WriteLine("Ola, eu sou o Cavaleiro " + this.Nome + ", tenho " + this.Vida + ", pontos de vida, inteligência: " + this.inteligencia + ", Agilidade: " + this.Agilidade + ", Força: " + this.Forca + ", Meu nivel atual é: " + this.Nivel);
         }
     }
 }

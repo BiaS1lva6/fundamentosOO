@@ -1,4 +1,5 @@
-﻿using fundamentosOO;
+﻿using defundamentos;
+using fundamentosOO;
 
 internal class Program
 {
@@ -114,26 +115,37 @@ internal class Program
         //Console.WriteLine(porc.Nome + " :faz ");
         //porc.emitirSom();
 
-        Mago merlin = new Mago();
-        merlin.Nome = "Mago Carlos";
-        merlin.Vida = 140;
-        merlin.Inteligencia = 77;
-        merlin.Agilidade = 60;
-        merlin.Forca = 62;
-        merlin.Nivel = 1;
-
         Elfo elfo = new Elfo();
-        elfo.Nome = "Claudio";
-        elfo.Vida = 100;
-        elfo.Inteligencia = 83;
-        elfo.Forca = 56;
-        elfo.Agilidade = 90;
+        elfo.Nome = " Tinker ";
+        elfo.Vida = 95;
+        elfo.inteligencia = 87;
+        elfo.Forca = 55;
+        elfo.Agilidade = 60;
         elfo.Nivel = 1;
 
 
-        merlin.apresentarSe();
-        elfo.apresentarSe();
+        Mago mago = new Mago();
+        mago.Nome = " Cleiton ";
+        mago.Forca = 80;
+        mago.Vida = 100;
+        mago.Agilidade = 55;
+        mago.inteligencia = 90;
+        mago.Nivel = 1;
 
-        merlin.batalha(elfo);
+
+
+        Cavaleiro cavaleiro = new Cavaleiro();
+
+        cavaleiro.Nome = " Jerson ";
+        cavaleiro.Forca = 10;
+        cavaleiro.Vida = 100;
+        cavaleiro.Agilidade = 70;
+        cavaleiro.inteligencia = 90;
+        cavaleiro.Nivel = 1;
+
+
+        mago.Apresentarse();
+        cavaleiro.Apresentarse();
+        mago.Batalha(cavaleiro);
     }
 }
